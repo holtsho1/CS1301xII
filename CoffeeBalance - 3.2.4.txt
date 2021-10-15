@@ -1,0 +1,75 @@
+cafe = "Octane"
+balance = 7.5
+
+#You may modify the lines of code above, but don't move them!
+#When you Submit your code, we'll change these lines to
+#assign different values to the variables.
+
+#Atlanta is full of great coffee places. Unfortunately, great
+#coffee is usually expensive. The variables above will
+#contain a balance and a cafe name. Below are the prices of
+#a cup of coffee at each of three locations:
+#
+# - Octane: $6
+# - Galloway: $5
+# - Starbucks: $4
+# - Revelator: $3
+# - Dunkin: $2
+#
+#Add some code above that will print one of the following
+#two messages depending on whether the value of balance is
+#high enough to buy a cup of coffee at the given cafe.
+#
+# - If it is sufficient, print "With [balance] dollars, I
+#   can buy coffee at [cafe]"
+# - If it is not sufficient, print "With [balance] dollars,
+#   I cannot buy coffee at [cafe]"
+
+
+#Add your code here!
+octane=6
+galloway=5
+starbucks=4
+revelator=3
+dunkin=2
+str_balance=str(balance)
+a="With "+str_balance+" dollars, I can buy coffee at "+cafe
+b="With "+str_balance+" dollars, I cannot buy coffee at "+cafe
+coffee_set=["Octane",  "Galloway",  "Starbucks",  "Revelator", "Dunkin"]
+balance_set=[octane,  galloway,  starbucks,  revelator,  dunkin]
+
+if cafe=="Octane":
+    if balance>=octane:
+        print(a)
+    if balance<octane:
+        print(b)
+if cafe=="Galloway":
+    if balance>=galloway:
+        print(a)
+    if balance<galloway:
+        print(b)
+if cafe=="Starbucks":
+    if balance>=starbucks:
+        print(a)
+    if balance<starbucks:
+        print(b)
+if cafe=="Revelator":
+    if balance>=revelator:
+        print(a)
+    if balance<revelator:
+        print(b)
+if cafe=="Dunkin":
+    if balance>=dunkin:
+        print(a)
+    if balance<dunkin:
+        print(b)
+
+        
+for i in range(1,5):
+    if cafe==coffee_set(i):
+        if balance>=balance_set(i):
+            print(a)
+        if balance<balance_set(i):
+            print(b)
+    
+    

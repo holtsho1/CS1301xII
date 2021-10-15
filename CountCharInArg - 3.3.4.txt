@@ -1,0 +1,16 @@
+argument = "Hello! What a fine day it is today."
+char_in_arg = "a"
+
+#-----------------------------------------------------------
+
+#Write some code below that will count and print how many
+#times mystery_character appears in mystery_string. You may
+#not use the string class's .count method.
+
+count=0
+for current_character in argument:
+        if current_character==char_in_arg:
+            count+=1
+
+print(count)
+
